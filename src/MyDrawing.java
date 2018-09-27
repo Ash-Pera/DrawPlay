@@ -1,3 +1,7 @@
+/**
+ * Contributions from Ash Pera
+ */
+
 import java.awt.Graphics;
 
 import javax.swing.JFrame;

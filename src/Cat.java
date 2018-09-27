@@ -1,3 +1,7 @@
+/**
+ * Contributions from Ash Pera
+ */
+
 import javax.swing.JPanel;
 import java.awt.*;
 import java.awt.geom.*;

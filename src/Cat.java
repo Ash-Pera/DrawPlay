@@ -1,3 +1,7 @@
+/**
+ * Contributions from Alex Whiteree
+ */
+
 import javax.swing.JPanel;
 import java.awt.*;
 import java.awt.geom.*;

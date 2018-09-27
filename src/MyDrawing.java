@@ -19,6 +19,7 @@ public class MyDrawing extends JPanel {
 	}
 	
 	double running_cat_loc = 0;
+	boolean running_cat_going_right = true;
 	// paintComponent is called automatically when the frame needs
 	// to display (e.g., when the program starts)
 	public void paintComponent(Graphics g) {
@@ -26,7 +27,18 @@ public class MyDrawing extends JPanel {
 		cat2.draw(g, 150, 150);
 		cat3.draw(g, 250, 25);
 		running_cat.draw(g, (int)running_cat_loc, 300);
-		running_cat_loc += 0.10;
+		if(running_cat_going_right) {
+			running_cat_loc += 0.10;
+		} else {
+			running_cat_loc -= 0.10;
+		}
+	
+		
+		if(running_cat_loc > 300) {
+			running_cat_going_right = false;
+		} else if (running_cat_loc < 0) {
+			running_cat_going_right = true;
+		}
 	}
 	
 	/**

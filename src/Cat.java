@@ -1,5 +1,6 @@
 /**
  * Contributions from Ash Pera
+ * Contributions from Alex Whiteree
  */
 
 import javax.swing.JPanel;
